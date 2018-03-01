@@ -23,7 +23,7 @@ int write_byte(ecc_t *ecc, unsigned char *address, unsigned char byteToWrite) {
     if(printTrace) { printf("WRITE : COMPUTED PARITY = ");print_code(codeword); }
     if(printTrace) { printf("WRITE : PARITY          = ");print_code_word(ecc, address); }
     if(printTrace) { printf("WRITE : DATA            = ");print_data_word(ecc, address); }
-    if(printTrace) { printf("WRITE : ECODED          = ");print_encoded(ecc, address); }
+    if(printTrace) { printf("WRITE : ENCODED         = ");print_encoded(ecc, address); }
     if(printTrace) { printf("\n"); }
     
 
@@ -61,7 +61,7 @@ int read_byte(ecc_t *ecc, unsigned char *address, unsigned char *byteRead) {
     if(printTrace) { printf("READ  : COMPUTED PARITY = ");print_code(codeword); }
     if(printTrace) { printf("READ  : PARITY          = ");print_code_word(ecc, address); }
     if(printTrace) { printf("READ  : DATA            = ");print_data_word(ecc, address); }
-    if(printTrace) { printf("READ  : ECODED          = ");print_encoded(ecc, address); }
+    if(printTrace) { printf("READ  : ENCODED         = ");print_encoded(ecc, address); }
     if(printTrace) { printf("READ  : SYNDROME        = ");print_code(SYNDROME); }
     if(printTrace) { printf("READ  : PW              = ");print_code(pW); }
     if(printTrace) { printf("READ  : PW2             = ");print_code(pW2); }
