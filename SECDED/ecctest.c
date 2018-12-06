@@ -1,8 +1,6 @@
 #include <assert.h>
 #include "ecclib.h"
 
-// Function prototype for error injection function
-//
 void flip_bit(ecc_t *ecc, unsigned char *address, unsigned short bit_to_flip);
 
 int main(void)
